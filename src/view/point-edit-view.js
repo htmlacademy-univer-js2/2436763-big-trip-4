@@ -1,22 +1,5 @@
 import { createElement } from '../render.js';
 
-export default class PointEditView {
-  getTemplate() {
-    return createPointEditTemplate();
-  }
-
-  getElement() {
-    if (!this.element) {
-      this.element = createElement(this.getTemplate());
-    }
-
-    return this.element;
-  }
-
-  removeElement() {
-    this.element = null;
-  }
-}
 
 function createPointEditTemplate () {
   return `
@@ -162,4 +145,22 @@ function createPointEditTemplate () {
   </form>
 </li>
   `;
+}
+
+export default class PointEditView {
+  getTemplate() {
+    return createPointEditTemplate();
+  }
+
+  getElement() {
+    if (!this.element) {
+      this.element = createElement(this.getTemplate());
+    }
+
+    return this.element;
+  }
+
+  removeElement() {
+    this.element = null;
+  }
 }
