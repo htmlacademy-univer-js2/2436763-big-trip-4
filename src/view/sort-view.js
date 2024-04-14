@@ -1,13 +1,9 @@
 import { createElement } from '../render.js';
-import { createPointTemplate } from '../templates/point-template.js';
+import { createSortTemplate } from '../templates/sort-template.js';
 
-export default class PointView {
-  constructor ({data}) {
-    this.point = data;
-  }
-
+export default class SortView {
   getTemplate() {
-    return createPointTemplate(this.point);
+    return createSortTemplate();
   }
 
   getElement() {

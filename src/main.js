@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import TripPresenter from './presenter/trip-presenter.js';
 import { RenderPosition, render } from './render.js';
 import FilterFormView from './view/filter-view.js';
@@ -22,4 +20,4 @@ const tripPresenter = new TripPresenter({
   pointModel
 });
 tripPresenter.init();
->>>>>>> Stashed changes
+
